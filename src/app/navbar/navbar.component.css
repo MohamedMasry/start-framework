@@ -1,0 +1,39 @@
+.navbar-brand {
+    color: white;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.navbar-brand:hover {
+    text-shadow: 0 2px 1px rgb(146, 146, 146), 0 4px 1px rgb(95, 95, 95), 0 6px 1px rgb(61, 61, 61), 0 8px 1px rgb(30, 30, 30), 0 9px 1px black, 0 10px 1px black, 0 11px 1px black, 0 12px 1px black;
+}
+.navbar-brand:active {
+    color: var(--secondary-color);
+    text-shadow: 0 2px 1px #2C3E50, 0 4px 1px #4d5e6f, 0 6px 1px #8a99a8, 0 8px 1px #afb8c0, 0 9px 1px rgb(197, 197, 197), 0 10px 1px rgb(255, 255, 255);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    text-align: center;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    background-color: var(--secondary-color);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:active {
+    filter: saturate(50%);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.nav-active {
+    background-color: var(--secondary-color);
+    text-shadow: 0 0 2px black;
+}
+

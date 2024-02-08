@@ -1,0 +1,28 @@
+<section class="p-color">
+    <div class="container my-3 my-md-0 py-5 py-lg-0 text-center">
+        <div class="flex-center flex-column w-100">
+            <h1>Portfolio component</h1>
+            <div class="header-icon position-relative flex-center my-3">
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+        <div class="row g-5">
+
+            <div class="col-md-6 col-lg-4" *ngFor="let img of portImgs">
+                <div class="port-img position-relative rounded-4 overflow-hidden pointer" (click)="openModal($event)">
+                    <img [src]="img" class="w-100" alt="portfolio image">
+                    <div class="img-layer flex-center position-full">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div id="modal-container" class="port-modal position-full flex-center d-none"  (click)="closeModal($event)">
+    <div class="p-5 flex-center">
+        <img id="modal-img" src="./assets/images/port-1.png" class=" w-100 " alt="portfolio image" >
+    </div>
+</div>

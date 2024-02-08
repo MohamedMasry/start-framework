@@ -1,0 +1,30 @@
+<section class="p-color">
+    <div class="container my-3 my-md-0 py-5 py-lg-0 text-center">
+        <div class="flex-center flex-column w-100 mb-5">
+            <h1>Contact section</h1>
+            <div class="header-icon position-relative flex-center my-3">
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+
+        <form class="w-75 mx-auto" style="text-align: left;">
+            <label for="userName">UserName :</label>
+            <input type="text" class="contactInput" placeholder="User Name" (input)="inputChange($event)">
+
+            <label for="userName">Age :</label>
+            <input type="number" class="contactInput" placeholder="Age" (input)="inputChange($event)">
+
+            <label for="userName">E-Mail :</label>
+            <input type="email" class="contactInput" placeholder="E-Mail" (input)="inputChange($event)">
+
+            <label for="userName">Password :</label>
+            <input type="password" class="contactInput" placeholder="Password" (input)="inputChange($event)">
+
+            <button type="button" class="btn secondary-bg mt-4">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+</section>
